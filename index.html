@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact Info</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form class="demo-form" action="/some-server-endpoint" method="post">
+        <h1>Tell us about you!</h1>
+        <fieldset name="contact-info">
+            <legend>Contact Info</legend>
+            <label for="first-name">First Name</label>
+            <input placeholder="Nate" type="text" name="first-name" id="first-name"/>
+
+            <label for="last-name">Last Name</label>
+            <input placeholder="Smith" type="text" name="last-name" id="last-name"/>
+
+            <label for="phone" required>Phone Number</label>
+            <input placeholder="123-456-7890" type="tel" pattern="^[1-9]\d{2}-\d{3}-\d{4}" name="phone" id="phone" title="A Typical US Phone Number" required/>
+        </fieldset>
+
+        <label class="question" for="feelings">How do you feel?</label>
+        <select name="feelings" id="feeling" required>
+            <option value="0" selected>Amazing!</option>
+            <option value="1">Alright.</option>
+            <option value="3">Meh...</option>
+            <option value="4">NO</option>
+        </select>
+        <fieldset>
+            <legend class="question">How do you REALLY feel?!</legend>
+            <input type="radio" name="feelings-2" id="ans-great-1" value="0" checked>
+            <label for="ans-great-1">Legit awesomeness.</label>
+            <br>
+            <input type="radio" name="feelings-2" id="ans-great-2">I'm alright I guess...</label>
+            <br>
+            <input type="radio" name="feelings-2" id="ans-great-3">Mehhh</label>
+            <br>
+            <input type="radio" name="feelings-2" id="ans-great-4">Go away!</label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </body>
+</html>
